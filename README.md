@@ -1,5 +1,4 @@
 # Blockchain API
-[Main Readme](/README.md)
 
 ## Required steps
 ### Prerequisites
