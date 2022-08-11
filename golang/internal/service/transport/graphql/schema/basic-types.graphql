@@ -1,0 +1,9 @@
+type Query {
+	ping: String!
+	serverTime: Time!
+}
+
+type Mutation {
+	ping: String!
+	serverTime: Time!
+}

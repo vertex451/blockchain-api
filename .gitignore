@@ -1,0 +1,29 @@
+yarn-error.log
+.npmrc
+.DS_Store
+dist/
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+node_modules
+
+# IDE files
+.vscode/*
+.idea/*
+
+# .env.local is designed to store secrets
+.env.local
+
+# grapqhl generated files
+golang/internal/service/transport/graphql/generated
+
+# mockery generated files
+mock_*.go
+
+# binary directory
+artifacts

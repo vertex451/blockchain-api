@@ -1,0 +1,34 @@
+extend type Query {
+	getLatestBlockNumber: Int!
+	getTransactionHistory(address: String!, chain_id: Int!): getTransactionHistoryResponse
+	getTokenBalances(address: String!, chain_id: Int!): getTokenBalancesResponse
+}
+
+type getTransactionHistoryResponse {
+	address: String!
+	chainID: Int!
+	items: [transaction]!
+}
+
+type transaction {
+	txHash: String!
+	Successful: Boolean!
+	From: String!
+	To: String!
+	Value: String!
+	BlockSignedAt: String!
+}
+
+type getTokenBalancesResponse {
+	address: String!
+	chainID: Int!
+	items: [tokenBalance]!
+}
+
+type tokenBalance {
+	LogoURL: String!
+	Balance: String!
+	ContractTickerSymbol: String!
+	ContractDecimals: Int!
+	QuoteRate: Float!
+}

@@ -1,0 +1,10 @@
+extend type Query {
+	hello(name: String!): helloResponse!
+	hello2(name: String!): String!
+}
+
+type helloResponse {
+	response: String!
+}
+
+
